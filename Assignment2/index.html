@@ -1,0 +1,514 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <style>
+*{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        body{
+            margin:10px;
+        }
+        section{
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(19, 1fr);
+            grid-template-rows:repeat(10, 1fr);
+            width:100%;
+            /* height: 500px; */
+            padding: 10px;
+            grid-gap:10px;
+        }
+        .box {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20, .box39,.box58,.box77,.box106,.box305,.box504,.box703{
+background-color: black;
+color: white;
+        }
+        .box-black{
+            background-color: black;
+color: white;
+        }
+        .p{
+            background-color: pink;
+        }
+        .y{
+            background-color: rgb(202, 202, 61);
+        }
+        .b{
+            background-color: rgb(65, 65, 207);
+        }
+        header{
+            display: flex;
+            gap:20px;
+            /* justify-content: space-between; */
+        }
+        .container1{
+            width:30vw;
+            height:200px;
+            background-color:rgb(81, 81, 212);
+            margin: 10px;
+
+        }
+        .container2{
+            width:70vw;
+            height:200px;
+            /* flex:2fr; */
+            background-color:rgb(116, 116, 129);
+            margin: 10px;
+
+        }
+        .container3{
+            /* width:100vw; */
+            height:300px;
+            background-color:rgb(80, 80, 83);
+            margin: 10px;
+        }
+        footer{
+            /* width:100%; */
+            height:200px;
+            background-color:rgb(123, 123, 138);
+            margin: 10px;
+
+        }
+container{
+    background-color: #fff;
+    display: flex;
+    gap:50px;
+    justify-content: space-between;
+}
+.boxsection{
+    width:50vw;
+            height:400px;
+            background-color:rgb(81, 81, 212);
+            margin: 10px;
+        }
+    
+        @media screen and  (max-width: 600px){
+                container{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .boxsection{
+                    width:100%;
+                    height: 200px;
+                }
+        }
+
+    </style>
+
+ <body>
+
+    <h1 style="text-align:center">Pre_Placement_PPT=Assignment 2</h1>
+    <br>
+<hr>
+<br>
+<hr>
+
+<pre>
+
+Q.1 What’s Box Model in CSS ? 
+Ans:
+BOX Model in Css is nothing but just a combination of content,padding,border and margin The Box Model
+provides a way to control the dimensions and spacing of elements on a web page. 
+By setting values for the content, padding, border, and margin, you can manipulate the size,
+ positioning, and spacing of elements to achieve the desired layout and design.
+
+</pre>
+<hr>
+<br>
+<hr>
+<pre>
+
+
+Q.2 What are the Different Types of Selectors in CSS & what are the advantages of them?
+Ans:
+CSS provides several types of selectors that allow you to target and style specific elements on a 
+web page. Here are some of the different types of selectors in CSS:
+
+Class Selector:
+Class selectors target elements based on their assigned class attribute. To select elements with a
+specific class, you prefix the class name with a dot (e.g., .classname). Multiple elements can 
+share the same class, allowing you to apply consistent styling to multiple elements.
+Advantage: Class selectors allow you to apply styles to specific groups of elements, making it easy
+to create reusable styles and apply them selectively.
+
+Element Selector:
+Element Selector target element  based on their Tag name for example:&ltp>,&lth1>,&ltdiv>,&ltnav> and many more
+Advantage: Element selectors are straightforward to use and provide a way to style multiple elements of the same type uniformly.
+
+Id Selector:
+Id selector target element based on there unique id name and can be used only once for perticular tag for which it 
+is granted that nameTo select an element by ID, you prefix the ID name with a hash symbol (e.g., #idname)
+An ID should be unique within the HTML document, so it is suitable for selecting and styling a single element
+Advantage: ID selectors provide a way to style a specific element uniquely, making them useful for applying 
+specific styles or targeting specific elements in JavaScript.
+
+</pre>
+<hr>
+<br>
+<hr>
+<pre>
+
+Q.3 What is VW/VH ?
+Ans:
+VW means viewport width and VH means viewport height  The viewport exactly means it take area that is 
+visible not more than that  
+vw (viewport width): 1vw is equal to 1% of the width of the viewport. For example, if the viewport width
+ is 1000 pixels, then 1vw would be equal to 10 pixels (1% of 1000 pixels). This unit is useful for making
+  elements responsive and adjusting their size based on the width of the viewport.
+vh (viewport height): 1vh is equal to 1% of the height of the viewport. Similar to vw, it allows you to define
+ sizes based on a percentage of the viewport height. This unit is useful for creating elements that scale
+  proportionally with the height of the viewport.
+
+</pre>
+
+<hr>
+<br>
+<hr>
+
+
+<pre>
+
+Q.4 Whats difference between Inline, Inline Block and block ?
+Ans:
+Inline Element:
+Inline Element are those  Element which do not take any extra space for Inline elements are displayed 
+on the same line as their neighboring elements, if there is enough space. 
+They do not start form new line and they do not create line brake
+Inline Element have no  kind height and width properties affect
+Example for inline element are &ltspan>, &ltimg>, &lta>, &ltstrong>
+
+Inline Block:
+Inline Block Element are those element which has both properties of inline and block element
+They can have a width and height, and margins and paddings work on all sides.
+
+Block Element:
+Block Element are those element which behave like a box model They take entire width which is specified
+by there parent element unless a specific width is defined.
+Block elements can have width, height, margins, paddings, and can also contain other block or inline elements.
+They create line breaks before and after themselves.
+Examples of block elements are &ltdiv>, &ltp>, &lth1> to &lth6>, &ltul>, and &ltli>.
+
+</pre>
+    
+<br>
+<hr>
+<hr>
+<pre>
+
+Q5)How is Border-box different from Content Box?
+Ans:
+    Content-box (default):
+    
+    In the default box-sizing value, known as "content-box," the width and height properties only
+     apply to the content area of an element.
+    If you specify a width of, for example, 300 pixels, the specified width applies only to the
+     content area, and any padding or border added to the element increases its total width beyond the specified value.
+    In other words, the width and height of an element do not account for padding or border,
+     and they need to be calculated separately.
+    Border-box:
+    
+    In the "border-box" box-sizing value, the width and height properties include the content, padding, and border of an element.
+    If you specify a width of 300 pixels for an element with padding and border, the total width of the
+     element, including its content, padding, and border, will be 300 pixels.
+    In border-box, the specified width and height values set the dimensions of the entire box, 
+    and the content area shrinks or expands to fit within those dimensions while accounting for padding and border.
+</pre>
+
+
+
+<hr>
+<hr>
+
+<pre>
+Q.6 What is Z-index and how it function?
+    Ans:
+    The z-index property in CSS controls the stacking order of elements on a web page along the z-axis.
+    It determines which elements appear in front of or behind other elements when they overlap.
+    The z-index property accepts integer values and can be applied to positioned elements 
+    (position: relative, absolute, or fixed).
+    </pre>
+<hr>
+<hr>
+<pre>
+Q.7 What’s Grid & Flex and difference between them?
+Ans:
+Flexbox:
+Flexbox, short for Flexible Box Layout, is a one-dimensional layout system that operates along either the horizontal or vertical axis.
+It offers properties like flex-direction, justify-content, align-items, and align-self to control the layout behavior of flex items.
+Flexbox is ideal for building components like navigation menus, card layouts, and vertically or horizontally aligned elements.
+
+Grid:
+CSS Grid Layout, commonly known as Grid, is a two-dimensional layout system that allows you to create grid-based layouts.
+It works with both rows and columns, giving you precise control over the placement and sizing of elements in a grid structure.
+It offers properties like grid-template-columns, grid-template-rows, grid-gap, and grid-area to control the grid structure
+ and item placement.
+Grid is suitable for designing entire page layouts, complex grid-based designs, and aligning items in both rows and columns.
+
+Differences between Flexbox and Grid:
+
+Dimensionality:
+Flexbox is a one-dimensional layout system, operating along a single axis (either horizontal or vertical).
+Grid is a two-dimensional layout system, allowing you to work with rows and columns simultaneously.
+
+Layout Control:
+Flexbox provides powerful control over the alignment, spacing, and order of flex items within a single row or column.
+Grid offers fine-grained control over the placement, sizing, and alignment of items in a grid structure,
+ including both rows and columns
+
+Complexity:
+Flexbox is simpler and easier to use for relatively simple layouts and one-dimensional designs.
+Grid is more robust and suitable for complex, two-dimensional layouts with multiple rows and columns.
+
+Use Cases:
+Flexbox is commonly used for building small-scale layouts and components, such as navigation menus, card layouts,
+ and vertical/horizontal alignments.
+Grid is often used for larger-scale layouts, full-page designs, complex grid-based structures, and aligning items
+ in both rows and columns.
+</pre>
+<hr>
+<hr>
+<pre>
+Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
+Ans:
+
+Absolute Positioning:
+With absolute positioning, an element is positioned relative to its closest positioned ancestor
+ (an ancestor element that has a position value other than "static") or the containing block.
+It is completely removed from the normal document flow, meaning it does not affect the positioning of other elements.
+The position of an absolutely positioned element can be controlled using the top, right, bottom, and left properties.
+    </pre>
+    <hr>
+    <hr>
+    Q.9 Build Periodic Table as shown in the below image
+    
+    
+    <section>
+       <div class="box box1"><h1>Group Period</h1></div>
+       <div class="box box2">1</div>
+       <div class="box box3">2</div>
+       <div class="box box4">3</div>
+       <div class="box box5">4</div>
+       <div class="box box6">5</div>
+       <div class="box box7">6</div>
+       <div class="box box8">7</div>
+       <div class="box box9">8</div>
+       <div class="box box10">9</div>
+       <div class="box box11">10</div>
+       <div class="box box12">11</div>
+       <div class="box box13">12</div>
+       <div class="box box14">13</div>
+       <div class="box box15">14</div>
+       <div class="box box16">15</div>
+       <div class="box box17">16</div>
+       <div class="box box18">17</div>
+       <div class="box box19">18</div>
+       <div class="box box20">1</div>
+       <div class="box box21 p"><h1>1</h1><h1>H</h1></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box38 p"><h1>2</h1><h1>He</h1></div>
+       <div class="box box39">2</div>
+       <div class="box box40 p"><h1>3</h1><h1>Li</h1></div>
+       <div class="box box41 p"><h1>4</h1><h1>Be</h1></div>
+       <div class="box box-black "></div>
+       <div class="box box-black "></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box52 y"><h1>5</h1><h1>B</h1></div>
+       <div class="box box53 y"><h1>6</h1><h1>C</h1></div>
+       <div class="box box54 y"><h1>7</h1><h1>N</h1></div>
+       <div class="box box55 y"><h1>8</h1><h1>O</h1></div>
+       <div class="box box56 y"><h1>9</h1><h1>F</h1></div>
+       <div class="box box57 y"><h1>10</h1><h1>Ne</h1></div>
+       <div class="box box58">3</div>
+       <div class="box box59 p"><h1>11</h1><h1>Na</h1></div>
+       <div class="box box60 p"><h1>12</h1><h1>Mg</h1></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box71 y"><h1>13</h1><h1>Al</h1></div>
+       <div class="box box72 y"><h1>14</h1><h1>Si</h1></div>
+       <div class="box box73 y"><h1>15</h1><h1>P</h1></div>
+       <div class="box box74 y"><h1>16</h1><h1>S</h1></div>
+       <div class="box box75 y"><h1>17</h1><h1>Cl</h1></div>
+       <div class="box box76 y"><h1>18</h1><h1>Ar</h1></div>
+       <div class="box box77">4</div>
+       <div class="box box78 p"><h1>19</h1><h1>K</h1></div>
+       <div class="box box79 p"><h1>20</h1><h1>Ca</h1></div>
+       <div class="box box82"><h1>21</h1><h1>Sc</h1></div>
+       <div class="box box81"><h1>22</h1><h1>Ti</h1></div>
+       <div class="box box83"><h1>23</h1><h1>V</h1></div>
+       <div class="box box80"><h1>24</h1><h1>Cr</h1></div>
+       <div class="box box84"><h1>25</h1><h1>Mn</h1></div>
+       <div class="box box85"><h1>26</h1><h1>Fe</h1></div>
+       <div class="box box86"><h1>27</h1><h1>Co</h1></div>
+       <div class="box box87"><h1>28</h1><h1>Ni</h1></div>
+       <div class="box box88"><h1>29</h1><h1>Cu</h1></div>
+       <div class="box box89"><h1>30</h1><h1>Zn</h1></div>
+       <div class="box box90 y"><h1>31</h1><h1>Ga</h1></div>
+       <div class="box box100 y"><h1>32</h1><h1>Ge</h1></div>
+       <div class="box box102 y"><h1>33</h1><h1>As</h1></div>
+       <div class="box box103 y"><h1>34</h1><h1>Se</h1></div>
+       <div class="box box104 y"><h1>35</h1><h1>Br</h1></div>
+       <div class="box box105 y"><h1>36</h1><h1>Kr</h1></div>
+       <div class="box box106">5</div>
+       <div class="box box107 p"><h1>37</h1><h1>Rb</h1></div>
+       <div class="box box108 p"><h1>38</h1><h1>Sr</h1></div>
+       <div class="box box109"><h1>39</h1><h1>Y</h1></div>
+       <div class="box box200"><h1>40</h1><h1>Zr</h1></div>
+       <div class="box box201"><h1>41</h1><h1>Nb</h1></div>
+       <div class="box box202"><h1>42</h1><h1>Mo</h1></div>
+       <div class="box box203"><h1>43</h1><h1>Tc</h1></div>
+       <div class="box box204"><h1>44</h1><h1>Ru</h1></div>
+       <div class="box box205"><h1>45</h1><h1>Rh</h1></div>
+       <div class="box box206"><h1>46</h1><h1>Pd</h1></div>
+       <div class="box box207"><h1>47</h1><h1>Ag</h1></div>
+       <div class="box box208"><h1>48</h1><h1>Cd</h1></div>
+       <div class="box box209 y"><h1>49</h1><h1>In</h1></div>
+       <div class="box box300 y"><h1>50</h1><h1>Sn</h1></div>
+       <div class="box box301 y"><h1>51</h1><h1>Sb</h1></div>
+       <div class="box box302 y"><h1>52</h1><h1>Te</h1></div>
+       <div class="box box303 y"><h1>53</h1><h1>I</h1></div>
+       <div class="box box304 y"><h1>54</h1><h1>Xe</h1></div>
+       <div class="box box305">6</div>
+       <div class="box box306 p"><h1>55</h1><h1>Cs</h1></div>
+       <div class="box box307 p"><h1>56</h1><h1>Ba</h1></div>
+       <div class="box box308"><h1>57</h1><h1>Lu</h1></div>
+       <div class="box box309"><h1>58</h1><h1>Hf</h1></div>
+       <div class="box box400"><h1>59</h1><h1>Ta</h1></div>
+       <div class="box box401"><h1>60</h1><h1>W</h1></div>
+       <div class="box box402"><h1>61</h1><h1>Re</h1></div>
+       <div class="box box403"><h1>62</h1><h1>Os</h1></div>
+       <div class="box box404"><h1>63</h1><h1>Ir</h1></div>
+       <div class="box box405"><h1>64</h1><h1>Pt</h1></div>
+       <div class="box box406"><h1>65</h1><h1>Au</h1></div>
+       <div class="box box407"><h1>66</h1><h1>Hg</h1></div>       
+       <div class="box box408 y"><h1>67</h1><h1>Tl</h1></div>
+       <div class="box box409 y"><h1>68</h1><h1>Pb</h1></div>
+       <div class="box box500 y"><h1>69</h1><h1>Bi</h1></div>
+       <div class="box box501 y"><h1>70</h1><h1>H\Po</h1></div>
+       <div class="box box y"><h1>71</h1><h1>At</h1></div>
+       <div class="box box y"><h1>72</h1><h1>Rn</h1></div>
+       <div class="box box305">7</div>
+       <div class="box box306 p"><h1>73</h1><h1>Fr</h1></div>
+       <div class="box box307 p"><h1>74</h1><h1>Ra</h1></div>
+       <div class="box box308"><h1>75</h1><h1>Lr</h1></div>
+       <div class="box box309"><h1>76</h1><h1>Rf</h1></div>
+       <div class="box box400"><h1>77</h1><h1>Db</h1></div>
+       <div class="box box401"><h1>78</h1><h1>Sg</h1></div>
+       <div class="box box402"><h1>79</h1><h1>Bh</h1></div>
+       <div class="box box403"><h1>80</h1><h1>HS</h1></div>
+       <div class="box box404"><h1>81</h1><h1>Mt</h1></div>
+       <div class="box box405"><h1>82</h1><h1>Ds</h1></div>
+       <div class="box box406"><h1>83</h1><h1>Rg</h1></div>
+       <div class="box box407"><h1>84</h1><h1>Cn</h1></div>       
+       <div class="box box408 y"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box409 y"><h1>86</h1><h1>Fl</h1></div>
+       <div class="box box500 y"><h1>87</h1><h1>Mc</h1></div>
+       <div class="box box501 y"><h1>88</h1><h1>Lv</h1></div>
+       <div class="box box y"><h1>89</h1><h1>Ts</h1></div>
+       <div class="box box y"><h1>90</h1><h1>Og</h1></div>
+       <div class="box box504"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black">8</div>
+       <div class="box box508 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box507 b"><h1>85</h1><h1>Nh</h1></div>       
+       <div class="box box509 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box600 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box601 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box602 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box603 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box604 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box605 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box606 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box607 b"><h1>85</h1><h1>Nh</h1></div>       
+       <div class="box box608 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box609 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box700 b"><h1>85</h1><h1>Nh</h1></div>       
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       <div class="box box703"></div>
+       <div class="box box-black"></div>
+       <div class="box box-black">9</div>
+       <div class="box box707 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box706 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box708 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box709 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box800 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box801 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box802 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box803 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box804 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box805 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box806 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box807 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box808 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box809 b"><h1>85</h1><h1>Nh</h1></div>
+       <div class="box box-black"></div>
+       <div class="box box-black"></div>
+       
+   </section>
+    <hr>
+    <hr>
+
+Q.10 Build Responsive Layout both desktop and mobile and Tablet, see below image for reference ?
+Ans:
+
+<header>
+    <div class="container1"></div>
+    <div class="container2"></div>
+</header>
+<nav>
+<div class="container3"></div>
+</nav>
+<container class="resp">
+    <div class="boxsection "></div>
+    <div class="boxsection "></div>
+    <div class="boxsection "></div>
+</container>
+<footer>
+    <div class="container7"></div>
+</footer>
+
+</body>
+ </html>

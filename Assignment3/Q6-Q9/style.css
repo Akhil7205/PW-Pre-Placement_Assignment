@@ -1,0 +1,173 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: manrope,sans-serif;
+}
+.box{
+    margin: 1% 10%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    /* position: -webkit-sticky; */
+  /* position: fixed; */
+  /* width: 100%; */
+  background-color: white;
+  /* top:0px; */
+}
+.ul-links,.ul-links>li>a{
+    display: flex;
+    gap:2.5em;
+    text-decoration: none;
+    color:black;
+    list-style: none;
+    align-items: center;
+    visibility: hidden;
+}
+.links{
+    display: flex;
+    gap:20px;
+    /* flex-direction: row; */
+}
+a{
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: .75px;
+    font-weight: 550;
+    font-size: .988rem;
+}
+.btnapply{
+    font-size: 1rem;
+    background-color:#0069D9;
+    padding: 10px 10px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+
+}
+.section-container{
+    display: flex;
+    gap:0px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% ;
+    /* margin-top: 200px; */
+    
+}
+.left-side{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h4{
+    font-size:2em;
+}
+h1{
+    color:#1893F7;
+    font-size: 4em;
+}
+h3{
+    font-size: 1.4em;
+    color:#6297F7;
+}
+p{
+    font-size: 1.2em;
+    max-width: 500px;
+    color:rgb(44, 43, 43);
+    line-height: 1.5;
+}
+.partners{
+    width: 400px;
+}
+.apply{
+    width: 250px;
+}
+
+video{
+    width:100%;
+    height:600px;
+}
+
+.Fees{
+    background-color: black;
+    text-align: center;
+    color:white;
+    padding: 50px;
+
+}
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    margin-top: 80px;
+    padding: 50px;
+}
+h2{
+    padding-bottom: 10px;
+}
+.mid-box1>ul,.mid-box1>ul>li,.mid-box1>ul>li>a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:rgb(119, 106, 106);
+    gap:0.5em;
+    
+}
+.right-box{
+    display: flex;
+    gap:2px;
+    flex-direction: column;
+}
+#email{
+    padding: 10px 45px;
+    border-radius: 5px;
+    text-align: left;
+}
+.sub{
+    padding: 10px 45px;
+    background-color: #1893F7;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+@media screen and (max-width: 900px ){
+    .section-container{
+        flex-direction: column;
+        display: flex;
+        /* background-color: #1893F7; */
+    }
+   /* a{
+       visibility: hidden;
+   } */
+   /* body{
+       width:100%;
+       width:fit-content;
+   } */
+   .foot-container{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   .Fees{
+    background-color:white;
+    text-align: center;
+    color:black;
+    padding: 50px;
+
+}
+
+}
+@media screen and (min-width:900px){
+    .ul-links>li>a{
+        visibility: visible;
+    }
+}

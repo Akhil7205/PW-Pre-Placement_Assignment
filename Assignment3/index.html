@@ -1,0 +1,98 @@
+<h1 style="text-align:center">Pre_Placement_PPT=Assignment 3</h1>
+    <br>
+<hr>
+<br>
+<hr>
+<pre>
+    Q.1 What is a Media Query in CSS, and what is its purpose?
+    Ans:
+    With media queries, you can create CSS rules that adapt the layout, positioning, font sizes, or any
+    other aspect of your webpage to fit different screen sizes and devices. This allows for a better user
+    experience across a wide range of devices, from large desktop screens to small mobile devices.
+    Media queries are a fundamental tool in responsive web design, enabling you to create flexible and
+    adaptive layouts that cater to different viewing contexts and enhance the usability and accessibility of your web pages.
+</pre>
+<hr>
+<hr>
+<pre>
+    Q.2 How do you define a media query in CSS?
+    Ans:
+    To define a media query in CSS, you use the @media rule followed by a media type and a condition or set of
+    conditions that determine when the styles within the media query should be applied
+    we write in form of :
+
+    @media media-type and (condition){
+        css rule to apply when condition meet
+    }
+
+    Let's break down the different parts of a media query:
+
+    @media: This keyword signifies the start of a media query rule.
+
+    media-type: It represents the type of media being targeted. Some common media types are all 
+    (default), screen, print, speech, projection, etc. The screen media type is commonly used for targeting screens of devices.
+
+    condition: This is a condition or set of conditions that determine when the styles within the media query should be applied.
+    It can be based on various factors such as the width or height of the viewport, orientation, resolution, and more. 
+    You use comparison operators such as min-width, max-width, orientation, etc., to define the conditions.
+</pre>
+<hr>
+<hr>
+<pre>
+    Q.3 Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+    Ans:
+    responsive web design, breakpoints are specific points or thresholds in the viewport width where the layout of 
+    a web page changes to accommodate different screen sizes and devices. They determine when certain CSS rules or 
+    styles should be applied or modified to provide an optimal user experience.
+
+    Breakpoints are commonly used in conjunction with media queries to create responsive designs. Media queries allow 
+    you to apply different styles or rules based on specific conditions, such as the viewport width. By defining
+     breakpoints within media queries, you can adapt the layout and styles of your web page to different screen sizes.
+
+    comnly used breakpoints for various devices are :
+    for moblie screen it is max-480px
+    for tablet screen it is min-481px max-786px
+    for desktop screen it is min-787px 
+    
+    Mobile breakpoint 
+    @media (max-width: 480px) {
+      }
+      
+     Tablet breakpoint 
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
+      
+       Desktop breakpoint 
+      @media (min-width: 769px) {
+        
+      }
+</pre>
+<hr>
+<hr>
+<pre>
+    Q.4 What is the purpose of using Media Queries for Print Media?
+    Ans:
+    The purpose of using media queries specifically for print media is to apply styles and modifications to a web page
+     when it is being printed or viewed in print preview mode. By targeting the print media type, you can customize 
+     the appearance and layout of the printed version of your web page, ensuring it is optimized for printing purposes.
+</pre>
+<hr>
+<hr>
+<pre>
+    Q.5 What is the purpose of the orientation media feature?
+    Ans:
+    The orientation media feature in CSS is used to target and apply specific styles based on the orientation of the
+     device or viewport. It allows you to customize the layout, appearance, or other aspects of your web page based 
+     on whether the device is in a portrait or landscape orientation.
+
+    The purpose of the orientation media feature is to optimize the presentation of content depending on how the user
+     is viewing the page. By using the orientation media feature, you can provide a better user experience by adapting
+     the layout and styles to suit the specific orientation of the device.
+
+    There are two main part in oreientation :
+    
+    portrait:
+    The viewport is in a portrait orientation, i.e., the height is greater than or equal to the width
+    landscape:
+    The viewport is in a landscape orientation, i.e., the width is greater than the height
+</pre>
